@@ -10,10 +10,10 @@ public sealed class ChatForm : Form
     private readonly NumericUpDown _clientPort = NewPortInput();
     private readonly TextBox _username = new() { Text = "Cumali", MaxLength = 24, Width = 112 };
     private readonly TextBox _host = new() { Text = "127.0.0.1", Width = 132 };
-    private readonly Button _startServer = new() { Text = "Sunucuyu Başlat", Width = 128 };
-    private readonly Button _stopServer = new() { Text = "Sunucuyu Durdur", Width = 128, Enabled = false };
-    private readonly Button _connect = new() { Text = "Bağlan", Width = 88 };
-    private readonly Button _disconnect = new() { Text = "Bağlantıyı Kes", Width = 112, Enabled = false };
+    private readonly Button _startServer = new() { Text = "Sunucuyu Başlat", Width = 140, Height = 32 };
+    private readonly Button _stopServer = new() { Text = "Sunucuyu Durdur", Width = 140, Height = 32, Enabled = false };
+    private readonly Button _connect = new() { Text = "Bağlan", Width = 88, Height = 32 };
+    private readonly Button _disconnect = new() { Text = "Bağlantıyı Kes", Width = 124, Height = 32, Enabled = false };
     private readonly Label _serverStatus = new() { Text = "Sunucu kapalı", AutoSize = true };
     private readonly Label _status = new() { Text = "Hazır. Önce bir sunucu başlatın veya çalışan bir sunucuya bağlanın.", AutoSize = true };
     private readonly RichTextBox _messages = new()
